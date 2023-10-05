@@ -6,7 +6,8 @@ To use the Sudoku Solver program, follow these steps:
 1. **Prepare a Sudoku Puzzle File**:
    - Create a text file containing the Sudoku puzzle you want to solve. Use spaces to separate each column, and start a new line for each row. See test1.txt as an file example. It should like the following:
 
-     ```
+     
+```
 0 0 2 0 0 0 0 4 1
 0 0 0 0 8 2 0 7 0
 0 0 0 0 4 0 0 0 9
@@ -16,8 +17,7 @@ To use the Sudoku Solver program, follow these steps:
 1 0 0 0 9 0 0 0 0
 0 6 0 4 3 0 0 0 0
 8 5 0 0 0 0 4 0 0
-
-     ```
+```
 
    - Save this file.
 
@@ -34,7 +34,7 @@ To use the Sudoku Solver program, follow these steps:
      ```
      java Sudoku your_sudoku_file.txt
      ```
-     Replace `SudokuSolver` with the actual name of your Java program file and `your_sudoku_file.txt` with the name of the Sudoku puzzle file you created in step 1.
+     Replace `your_sudoku_file.txt` with the name of the Sudoku puzzle file you created in step 1.
 
 4. **View the Solution**:
    - The program will process the Sudoku puzzle and display the solved puzzle on the screen. You will see the solution in a grid format.
