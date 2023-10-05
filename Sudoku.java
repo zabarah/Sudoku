@@ -7,11 +7,12 @@ import java.util.Scanner;
 
 
 public class Sudoku{
-
-	static int dim = 9;
-	static int box_dim = 3;	
-	//read matrix from file provided
+	//dimension of the full grid
+	private static final int dim = 9;
+	//dimension of a box
+	private static final int box_dim = 3;	
 	
+	//read matrix from file provided	
 	static int[][] read_file(String file, int[][] matrix) throws Exception {
       		Scanner sc = new Scanner(new BufferedReader(new FileReader(file)));
       		while(sc.hasNextLine()) {
@@ -120,9 +121,8 @@ public class Sudoku{
 			matrix = read_file(args[0], matrix);
 		}
 		catch (Exception e){
-			System.out.print("please provide a valid file name for the Sudoku matrix");
-			System.out.println();
-			System.out.print(e.getMessage());
+			System.err.println("please provide a valid file name for the Sudoku matrix");
+			System.err.println(e.getMessage());
 			return;
 		}
 		if (solve_it(matrix,0,0)){
